@@ -204,6 +204,12 @@ body{
     background-size:contain;
     background-position:center;
 }
+.jailed{
+    background-image:url(../images/sadFace.png);
+    background-size:contain;
+    background-position:center;
+
+}
 
 .board .dice.cell{
     background-color:white;
