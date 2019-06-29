@@ -330,7 +330,7 @@ Monopoly.getNextCell = function (cell) {
 
 Monopoly.handlePassedGo = function () {
     var player = Monopoly.getCurrentPlayer();
-    Monopoly.updatePlayersMoney(player, Monopoly.moneyAtStart / 10);
+    Monopoly.updatePlayersMoney(player, -(Monopoly.moneyAtStart / 10));
 };
 
 
