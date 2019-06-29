@@ -136,6 +136,7 @@ Monopoly.handleBuyProperty = function (player, propertyCell) {
         if (clickedBtn.is("#yes")) {
             Monopoly.handleBuy(player, propertyCell, propertyCost);
         } else {
+            Monopoly.playSound("maybe-next-time");
             Monopoly.closeAndNextTurn();
         }
     });
