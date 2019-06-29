@@ -250,7 +250,7 @@ Monopoly.closeAndNextTurn = function () {
 Monopoly.initPopups = function () {
     $(".popup-page#intro").find("button").click(function () {
         var numOfPlayers = $(this).closest(".popup-page").find("input").val();
-        if (numOfPlayers === 0 || numOfPlayers === undefined) {
+        if (parseInt(numOfPlayers) < 2 || parseInt(numOfPlayers)>4 || parseInt(numOfPlayers) === undefined)  {
             numOfPlayers=2;
             Monopoly.createPlayers(numOfPlayers);
         } else {
